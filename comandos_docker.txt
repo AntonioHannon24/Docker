@@ -1,0 +1,26 @@
+			Site de container do docker hub.docker.com
+
+			Imagens docker
+
+docker run -it ubuntu  		== Roda uma imagem ubuntu em container
+docker run -it node 		== Roda uma imagem node em container
+docker run -d -p 80:80 nginx	== Roda uma imagem nginx no background,expondo a porta de conexão
+docker run -d -p 8080 --name  "nome container" == roda imagem nginx nomeada
+
+
+			Comandos Docker
+
+docker image ls 	== lista todas as imagens salvas na maquina
+docker rmi image  == remove uma imagem salva na maquina
+docker ps 			== lista todos os containers ativos
+docker ps -a 			== lista todos os containers no seu computador
+docker stop + hash 		== para de rodar o container pertencente aquela hash
+docker start +hash 		== continua um container que foi parado
+docker logs			== mostra todas as interações com aquele container
+docker rm + hash 		== remove um container
+docker build .          == cria um container no diretorio
+docker build -t "nome da imagem". == nomeia a imagem e builda
+docker system prune == remove tudo que não esta sendo utilizado no docker
+
+* lembretes
+* Para atualizar um container, precisa buildar novamente e iniciar o novo container

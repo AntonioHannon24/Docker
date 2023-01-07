@@ -24,3 +24,5 @@ docker system prune == remove tudo que não esta sendo utilizado no docker
 
 * lembretes
 * Para atualizar um container, precisa buildar novamente e iniciar o novo container
+
+docker network inspect bridge == mostra a rede dos containers
